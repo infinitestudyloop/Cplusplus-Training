@@ -153,14 +153,34 @@ I nomi in ordine alfabetico sono: Isabella , Rodolfo
 ```
 
 Inoltre alle variabili di tipo string si possono applicare molte funzioni ed altri operatori.
-* Esempio:
-* date le variabili stringa di nome `s1` ed `s2` ed gli interi `i` ed `n`:
+* Esempio: date le variabili stringa di nome `s1` ed `s2` ed gli interi `i` ed `n`:
   * `s1.at(i)` ritorna il carattere (tipo `char`) alla posizione `i` della stringa
   * `s1[i]` anche ritorna il carattere (tipo `char`) alla posizione `i` della stringa
   * `s1.substr(i, n)` ritorna la sottostringa di `s1` a partire dal carattere in posizione `i` e di lunghezza `n` caratteri
   * `s1.insert(i, s2)` modifica la stringa `s1` inserendo in essa la stringa `s2` in posizione `i`
   * `s1.find(s2, i)` a partire dalla posizione `i` di `s1` cerca la sottostringa s2 e ritorna la posizione in cui la trova, altrimenti `string::npos`.
   * o semplicemente `s1.find(s2)` per cercare dall'inizio.
+
+## Definizione di _Record_ e _Struttura_ (struct)
+Un **record** è una **struttura di dati statica** composta da **elementi eterogenei** (che possono quindi essere di tipo diverso tra loro) detti **campi** o **attributi**, ciascuno identificato da un **nome**.
+
+La **struttura di un record** definisce i campi che lo compongono.
+
+* Un **record ha un `nome`** (identificatore) 
+* e i suoi **campi hanno ognuno di essi un `nome` ed un `tipo`**, e possono contenere un valore del tipo definito
+
+I **record** sono utili a **descrivere una categoria di oggetti** con **caratteristiche (o attributi) comuni**.
+
+Esempio, per descrivere un insieme di oggetti della categoria **motocicletta** potremmo definire un
+* **record di nome** `motocicletta`
+* e con i seguenti attributi/campi ciascuno con un nome ed un tipo:
+  * nome: `produttore` tipo: `string`
+  * nome: `modello` tipo: `string`
+  * nome: `cilindrata` tipo: `int`
+  * nome: `consumoLitriPerKm` tipo `double`
+  * ...
+
+
 
 
 
