@@ -173,7 +173,7 @@ La **struttura di un record** definisce i campi che lo compongono.
 I **record** sono utili a **descrivere una categoria di oggetti** con **caratteristiche (o attributi) comuni**.
 
 Esempio, per descrivere un insieme di oggetti della categoria **motocicletta** potremmo definire un
-* **record di nome** `motocicletta`
+* **record** con **nome** `motocicletta`
 * e con i seguenti attributi/campi ciascuno con un nome ed un tipo:
   * nome: `produttore` tipo: `string`
   * nome: `modello` tipo: `string`
