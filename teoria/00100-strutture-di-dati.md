@@ -36,29 +36,29 @@ Un **vettore** è una **struttura di dati (statica)** che contiene una **sequenz
   * l'ultimo elemento alla posizione con indice N-1
 
 ### Dichiarazione ed inizializzazione di un vettore in C++
-```
+```cpp
 tipo_base nome_vettore [dimensione];
 ```
 esempi:
-```
+```cpp
 double temperatura_settimana [7];   // vettore di double di dimensione 7
 int voti [5];   // vettore di interi di dimensione 5
 ```
 esempio con inizializzazione:
-```
+```cpp
 int voti [5] = {72,98,100,99,45};
 ```
 è possibile omettere la dimensione quando viene inizializzato al momento della dichiazione:
-```
+```cpp
 int voti [] = {72,98,100,99,45};   // vettori di dimensione 5
 ```
 
 ### Accesso agli elementi di un vettore in C++:
-```
+```cpp
 nome_vettore [indice_elemento]
 ```
 esempio:
-```
+```cpp
 int voti [5] = {72,98,100,99,45};
 
 cout << voti[0] << endl;   // stampa il valore 72, primo elemento del vettore
@@ -68,12 +68,12 @@ cout << voti[4] << endl;   // stampa il valore 45, ultimo elemento del vettore, 
 cout << voti[5] << endl;   // AATENZIONE: fuori range, potrebbe stampare un valore inaspettato o causare errore
 ```
 nota:
-```
+```cpp
 cout << voti << endl;   // stampa l'indirizzo del primo elemento dell'array
 ```
 
 * Esempio con utilizzo di un iterazione `for`:
-```
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -163,7 +163,7 @@ Una **matrice** è `simile ad un vettore`, quindi è una **struttura di dati (st
   * l'ultimo elemento della ultima riga si trova alla posizione (N-1,M-1), riga N-1 e colonna M-1
 
 ### Dichiarazione ed inizializzazione di una matrice in C++
-```
+```cpp
 tipo_base nome_matrice [numero_righe][numero_colonne];
 ```
 * esempio di matrice 3x4, per riportare le temperature degli ultimi 3 giorni in 4 città nel mondo,
@@ -173,22 +173,22 @@ tipo_base nome_matrice [numero_righe][numero_colonne];
 * le temperature di Siracusa in colonna 1
 * le temperature di Oslo in colonna 2
 * le temperature di Capo Nord in colonna 3
-```
+```cpp
 int temperature[3][4];
 ```
 esempio con inizializzazione:
-```
+```cpp
 int temperature[3][4] = { { 25, 33, 12, -3 },
                           { 26, 29, 12,  0 },
                           { 22, 30, 11, -3 } };
 ```
 
 ### Accesso ad un elemento di una matrice in C++
-```
+```cpp
 nome_matrice [riga][colonna]
 ```
 esempio:
-```
+```cpp
 int temperature[3][4] = { { 25, 33, 12, -3 },
                           { 26, 29, 12,  0 },
                           { 22, 30, 11, -3 } };
@@ -210,7 +210,7 @@ cout << temperature[2][3] << endl;   // stampa il valore -3, ultimo elemento del
 ```
 
 Visualizziamo la matrice con due iterazione `for` annidate:
-```
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -313,9 +313,9 @@ int main() {
 
    return 0;
 }
-
-
+```
 Output:
+```
 Ciao, mi chiamo Rodolfo, e sono il tuo insegnante di informatica 
 Ciao, mi chiamo Isabella, e sono il tuo insegnante di letteratura 
 Ciao, mi chiamo Rodolfo, e sono il tuo insegnante di filosofia
