@@ -19,6 +19,7 @@ int main() {
    int i, j; 
    
    cout << "Temperature a Rovigo, Roma, Oslo, Capo Nord negli ultimi 3 giorni ***" << endl;
+
    for (i=0 ; i < RIGHE ; ++i) {
        
        cout << "Giorno " << i << ": ";
