@@ -99,22 +99,54 @@ Esempio dell'uso di **operatore di assegnazione `=`**, di **concatenazione `+`**
 using namespace std;
 
 int main() {
-   string s1, s2, s3, messaggio;
+   string materia1, materia2, materia3;
+   string nomeInsegnante1, nomeInsegnante2, nomeInsegnante3;
+   string s1, s2, messaggio1, messaggio2, messaggio3;
 
-   s1 = "Ciao, ";
-   s2 = "dal tuo insegnante ";
-   s3 = "di informatica ";
+   materia1 = "informatica ";
+   materia2 = "letteratura ";
+   materia3 = "filosofia";
 
-   messaggio = s1 + s2 + s3 + "Rodolfo!"; 
-   
-   cout << messaggio << endl;
-   
+   nomeInsegnante1 = "Rodolfo";
+   nomeInsegnante2 = "Isabella";
+   nomeInsegnante3 = nomeInsegnante1;
+
+   s1 = "Ciao, mi chiamo ";
+   s2 = ", e sono il tuo insegnante di ";
+
+   messaggio1 = s1 + nomeInsegnante1 + s2 + materia1; 
+   cout << messaggio1 << endl;
+   messaggio2 = s1 + nomeInsegnante2 + s2 + materia2;
+   cout << messaggio2 << endl;
+   messaggio3 = s1 + nomeInsegnante3 + s2 + materia3;
+   cout << messaggio3 << endl;
+
+   if (nomeInsegnante1 == nomeInsegnante2) 
+      cout << "Gli insegnanti di " << materia1 << " e " << materia2 << " hanno lo stesso nome." << endl;
+   else 
+      cout << "Gli insegnanti di " << materia1 << " e " << materia2 << " hanno nomi diversi." << endl;
+
+   if (nomeInsegnante1 == nomeInsegnante3) 
+      cout << "Gli insegnanti di " << materia1 << " e " << materia3 << " hanno lo stesso nome." << endl;
+   else 
+      cout << "Gli insegnanti di " << materia1 << " e " << materia3 << " hanno nomi diversi." << endl;
+
+   if (nomeInsegnante1 < nomeInsegnante2)
+      cout << "I nomi in ordine alfabetico sono: " << nomeInsegnante1 << " , " << nomeInsegnante2 << endl;
+   else
+      cout << "I nomi in ordine alfabetico sono: " << nomeInsegnante2 << " , " << nomeInsegnante1 << endl;
+
    return 0;
 }
 
 
 Output:
-Ciao, dal tuo insegnante di informatica Rodolfo!
+Ciao, mi chiamo Rodolfo, e sono il tuo insegnante di informatica 
+Ciao, mi chiamo Isabella, e sono il tuo insegnante di letteratura 
+Ciao, mi chiamo Rodolfo, e sono il tuo insegnante di filosofia
+Gli insegnanti di informatica  e letteratura  hanno nomi diversi.
+Gli insegnanti di informatica  e filosofia hanno lo stesso nome.
+I nomi in ordine alfabetico sono: Isabella , Rodolfo
 ```
 
 
