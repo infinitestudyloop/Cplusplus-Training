@@ -42,6 +42,98 @@ Un **vettore** è una **struttura di dati (statica)** che contiene una **sequenz
   * ...
   * l'ultimo elemento alla posizione con indice N-1
 
+### Dichiarazione ed inizializzazione di un vettore in C++
+```
+tipo_base nome_vettore [dimensione];
+```
+esempi:
+```
+double temperatura_settimana [7];   // vettore di double di dimensione 7
+int voti [5];   // vettore di interi di dimensione 5
+```
+esempio con inizializzazione:
+```
+int voti [5] = {72,98,100,99,45};
+```
+è possibile omettere la dimensione quando viene inizializzato al momento della dichiazione:
+```
+int voti [] = {72,98,100,99,45};   // vettori di dimensione 5
+```
+
+### Accesso agli elementi di un vettore in C++:
+```
+nome_vettore [indice_elemento]
+```
+esempio:
+```
+int voti [5] = {72,98,100,99,45};
+
+cout << voti[0] << endl;   // stampa il valore 72, primo elemento del vettore
+cout << voti[1] << endl;   // stampa il valore 98, secondo elemento del vettore
+...
+cout << voti[4] << endl;   // stampa il valore 45, ultimo elemento del vettore, (dimensione - 1) = (5 - 1) = 4
+cout << voti[5] << endl;   // AATENZIONE: fuori range, potrebbe stampare un valore inaspettato o causare errore
+```
+nota:
+```
+cout << voti << endl;   // stampa l'indirizzo del primo elemento dell'array
+```
+
+* Esempio con utilizzo di un iterazione `for`:
+```
+#include <iostream>
+using namespace std;
+
+int main() {
+   
+   const int NUM_VOTI = 5;   // definizione della dimensione del vettore come costante
+   
+   int voti [NUM_VOTI] = {72,98,100,99,45};
+   
+   int i = 0;
+   int somma = 0;
+   double media = 0.0; 
+   
+   cout << "Voti: " << endl;
+   for (i=0 ; i < NUM_VOTI ; ++i) {
+       cout << voti[i] << endl;
+   }
+   
+   cout << "-------------------------" << endl;
+   
+   for (i=0 ; i < NUM_VOTI ; ++i) {
+       somma += voti[i];
+       
+   }
+   
+   media = somma / NUM_VOTI;
+   
+   cout << "Somma dei Voti: " << somma << endl;
+   cout << "Media dei Voti: " << media << endl;
+   
+   return 0;
+}
+```
+Output:
+```
+Voti: 
+72
+98
+100
+99
+45
+-------------------------
+Somma dei Voti: 414
+Media dei Voti: 82
+```
+
+### Passaggio di un array ad una funzione in C++
+Poiche una variabile array in C++ contiene l'indirizzo del primo elemento (prima cella di memoria), quando viene passato ad una funzione, anche se in teoria viene passata una copia, l'effetto e' quello di un passaggio per riferimento, dato che la funzione e' in grado di modificare gli elementi al suo interno.
+```
+voti   ~   &voti[0] 
+```
+
+
 
 ## Definizione di _Matrice_ o _Array bi-dimensionale_
 
