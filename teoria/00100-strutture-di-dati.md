@@ -162,6 +162,65 @@ Una **matrice** è `simile ad un vettore`, quindi è una **struttura di dati (st
   * ...
   * l'ultimo elemento della ultima riga si trova alla posizione (N-1,M-1), riga N-1 e colonna M-1
 
+### Dichiarazione ed inizializzazione di una matrice in C++
+```
+tipo_base nome_matrice [numero_righe][numero_colonne];
+```
+* esempio di matrice 3x4, per riportare le temperature degli ultimi 3 giorni in 4 città nel mondo,
+* dove ogni riga rappresenta un giorno: giorno 0,1 e 2
+* ogni colonna rappresenta una citta 
+* le temperature di Rovigo in colonna 0
+* le temperature di Siracusa in colonna 1
+* le temperature di Oslo in colonna 2
+* le temperature di Capo Nord in colonna 3
+```
+int temperature[3][4];
+```
+esempio con inizializzazione:
+```
+int temperature[3][4] = { { 25, 33, 12, -3 },
+                          { 26, 29, 12,  0 },
+                          { 22, 30, 11, -3 } } 
+```
+visualizziamo la matrice con due iterazione `for` annidate:
+```
+#include <iostream>
+using namespace std;
+
+#define RIGHE 3
+#define COLONNE 4
+
+int main() {
+   
+   int temperature[RIGHE][COLONNE] = { { 25, 33, 12, -3 },
+                                     { 26, 29, 12,  0 },
+                                     { 22, 30, 11, -3 } };
+   
+   int i, j; 
+   
+   cout << "Temperature a Rovigo, Roma, Oslo, Capo Nord negli ultimi 3 giorni ***" << endl;
+   for (i=0 ; i < RIGHE ; ++i) {
+       
+       cout << "Giorno " << i << ": ";
+       
+       for (j=0 ; j < COLONNE ; ++j)
+          cout << temperature[i][j] << " ";
+          
+       cout << endl;
+   }
+   
+   return 0;
+}
+```
+Output:
+```
+Temperature a Rovigo, Roma, Oslo, Capo Nord negli ultimi 3 giorni ***
+Giorno 0: 25 33 12 -3 
+Giorno 1: 26 29 12 0 
+Giorno 2: 22 30 11 -3
+```
+
+
 ## Definizione di _Stringa_
 Una **stringa** è un **vettore di caratteri**, cioè una sequenza di caratteri. Quindi non è un tipo elementare ma una struttura di dati.
 
