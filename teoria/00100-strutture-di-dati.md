@@ -174,7 +174,7 @@ I **record** sono utili a **descrivere una categoria di oggetti** con **caratter
 
 Esempio, per descrivere un insieme di oggetti della categoria **motocicletta** potremmo definire un
 * **record** con **nome** `motocicletta`
-* e con i seguenti attributi/campi ciascuno con un nome ed un tipo:
+* con i seguenti **campi** ciascuno con un **nome** ed un **tipo**:
   * nome: `produttore` tipo: `string`
   * nome: `modello` tipo: `string`
   * nome: `cilindrata` tipo: `int`
