@@ -45,7 +45,7 @@ Una **matrice NxM**, è una **tabella** (bi-dimensionale) di **N righe** ed **M 
 
 Una **matrice** è simile ad un vettore, quindi è una **struttura di dati (statica)** che contiene una sequenza di elementi dello stesso tipo, 
 * ma mentre il vettore ha 1 sola dimensione e possiamo immaginarlo come una seguenza composta da 1 singola riga
-* la matrice invece ha 2 dimensioni e si può immaginare composta da piu sequenze di elementi cioè più righe.
+* la matrice invece ha 2 dimensioni e si può immaginare composta da piu sequenze di elementi cioè da più righe.
 * è comodo immaginare le righe in orizzontale e le colonne in verticale
 * cosi un elemento della matrice si può identificare con la coppia (riga, colonna) come nel gioco della battaglia navale.
  
