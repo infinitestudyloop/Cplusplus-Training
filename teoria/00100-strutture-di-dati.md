@@ -59,8 +59,8 @@ Una **matrice** è `simile ad un vettore`, quindi è una **struttura di dati (st
 * anche per la matrice, **ogni elemento (o cella) può essere acceduto direttamente** tramite il **nome della matrice** e la sua **posizione** che questa volta si specifica con **due indici**, il **numero di riga** ed il **numero di colonna**, dove:
   * il numero di riga è un **intero tra `0` ed `N-1`**, con **`N`** uguale al **numero totale di righe**
   * il numero di colonna è un **intero tra `0` ed `M-1`**, con **`M`** uguale al **numero totale di colonne**
-  * il primo elemento si trova alla posizione con indici (0,0), riga 0 e colonna 0
-  * il secondo elemento si trova alla posizione con indici (0,1), riga 0 e colonna 1 
+  * il primo elemento della prima riga si trova alla posizione con indici (0,0), riga 0 e colonna 0
+  * il secondo elemento della prima riga si trova alla posizione con indici (0,1), riga 0 e colonna 1 
   * ...
   * l'ultimo elemento della prima riga si trova alla posizione (0,M-1), riga 0 e colonna M-1
   * il primo elemento della seconda riga si trova alla posizione con indici (1,0), riga 1 e colonna 0
@@ -72,6 +72,50 @@ Una **matrice** è `simile ad un vettore`, quindi è una **struttura di dati (st
   * il secondo elemento della seconda riga si trova alla posizione con indici (N-1,1), riga N-1 e colonna 1
   * ...
   * l'ultimo elemento della ultima riga si trova alla posizione (N-1,M-1), riga N-1 e colonna M-1
+
+## Definizione di _Stringa_
+Una **stringa** è un **vettore di caratteri**, cioè una sequenza di caratteri. Quindi non è un tipo elementare ma una struttura di dati.
+
+Nel C++ moderno, il **tipo di dato string** è definito dalla **classe string** nella **libreria standard**. 
+
+Una variabile di tipo **string** in C++ possiamo immaginarla come:
+* una sequenze di caratteri memorizzate in celle contigue di memoria, come un vettore classico
+* ma mentre i vettori classici hanno dimensione statica, definita al momento della creazione
+* un oggetto string ha invece una dimensione (lunghezza) dinamica che può variare nel corso del programma
+
+Quindi per utilizzare il tipo string:
+* includere il file `<string>` della libreria standard
+* per comodità, dichiarare l'uso del namespace `std` per non doverlo specificare ogni volta
+
+L'utilizzo di string è molto intuitivo perchè si possono applicare ad esso gli stessi operatori utilizzati per alcuni tipi elementari già noti:
+* operatore di assegnamento `=`
+* operatore di concatenazione `+`
+* operatori di confronto `==`, `!=`, `<`, `>`, `<=`, `>=`
+
+Esempio dell'uso di **operatore di assegnazione `=`**, di **concatenazione `+`** e degli **operatori di confronto**:
+```
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+   string s1, s2, s3, messaggio;
+
+   s1 = "Ciao, ";
+   s2 = "dal tuo insegnante ";
+   s3 = "di informatica ";
+
+   messaggio = s1 + s2 + s3 + "Rodolfo!"; 
+   
+   cout << messaggio << endl;
+   
+   return 0;
+}
+
+
+Output:
+Ciao, dal tuo insegnante di informatica Rodolfo!
+```
 
 
 
