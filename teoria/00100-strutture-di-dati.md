@@ -4,6 +4,7 @@
 * [Definizione di _Vettore_ o _Array monodimensionale_](00100-strutture-di-dati.md#definizione-di-vettore-o-array-monodimensionale)
 * [Definizione di _Matrice_ o _Array bi-dimensionale_](00100-strutture-di-dati.md#definizione-di-matrice-o-array-bi-dimensionale)
 * [Definizione di _Stringa_](00100-strutture-di-dati.md#definizione-di-stringa)
+* [Definizione di _Record_ e _Struttura_ (struct)](00100-strutture-di-dati.md#definizione-di-record-e-struttura-struct)
 
 
 ## Definizione di _Strutture di Dati_
