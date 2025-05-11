@@ -1,4 +1,4 @@
-# Vettore (o Array monodimensionale)
+# Strutture di Dati
 
 ## Definizione di _Strutture di Dati_
 Le **strutture di dati** sono **strumenti per l'organizzazione dei dati**,
@@ -11,8 +11,10 @@ I linguaggi di programmazione offrono:
 * e **le strutture dati** che sono *strumenti per costruire tipi di **dati aggregrati più complessi***. 
 
 Esempi di strutture di dati: 
-* **vettori** (o array monodimensionali)
-* **matrici** (o array multidimensionali)
+* **array**:
+  * **vettori** (o array monodimensionali)
+  * **matrici** (o array bidimensionali)
+  * **array multidimensionali**
 * **record** (o strutture)
 * ...
 
@@ -20,7 +22,7 @@ Nota: le strutture di dati possono inoltre distinguersi in:
 * **statiche**
 * e **dinamiche**
 
-## Definizione di _Vettore_
+## Definizione di _Vettore_ o _Array monodimensionale_
 Un **vettore** è una **struttura di dati (statica)** che contiene una **sequenza di elementi dello stesso tipo**
 che si possono accedere tramite un **indice**.
 
