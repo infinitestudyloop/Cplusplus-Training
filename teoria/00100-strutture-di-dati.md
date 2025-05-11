@@ -173,14 +173,75 @@ La **struttura di un record** definisce i campi che lo compongono.
 I **record** sono utili a **descrivere una categoria di oggetti** con **caratteristiche (o attributi) comuni**.
 
 Esempio, per descrivere un insieme di oggetti della categoria **motocicletta** potremmo definire un
-* **record** con **nome** `motocicletta`
+* **record** con **nome** `Motocicletta`
 * con i seguenti **campi** ciascuno con un **nome** ed un **tipo**:
   * nome: `produttore` tipo: `string`
   * nome: `modello` tipo: `string`
   * nome: `cilindrata` tipo: `int`
-  * nome: `consumoLitriPerKm` tipo `double`
-  * ...
+  * nome: `kmPerLitro` tipo `float`
 
+### Dichiarazione di un tipo struttura (record) in C++
+
+Dichiarare un tipo struttura significa definire un tipo di dato che possiamo assegnare ad una nostra variabile.
+```cpp 
+struct nome_struttura {
+   tipo_campo1 nome_campo1;
+   tipo_campo2 nome_campo2;
+   ...
+   tipo_campoN nome_campoN;
+};
+```
+Nota il `;` alla fine della definizione di struttura 
+
+Una volta dichiarata la struttura possiamo dichiarare variabili di quel tipo.
+
+Esempio:
+* definiamo il tipo di struttura di nome `motocicletta`
+* **dichiariamo variabili** di tipo Motocicletta, con o senza inizializzazione
+* **assegniamo valori ai campi**
+* e **stampiamo il valori contenuti nei campi**:
+```cpp
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    
+   struct Motocicletta {
+      string produttore;
+      string modello;
+      int cilindrata;
+      float kmPerLitro;
+   };
+
+   struct Motocicletta moto1, moto2;
+   
+   moto1.produttore = "Kawasubi";
+   moto1.modello = "XT900";
+   moto1.cilindrata = 900;
+   moto1.kmPerLitro = 15.4;
+
+   moto2.produttore = "Hondin";
+   moto2.modello = "CGL3P";
+   moto2.cilindrata = 600;
+   moto2.kmPerLitro = 16.0;
+   
+   struct Motocicletta moto3 = { "Yammusi", "SuperYT", 1000, 12.5 };
+
+   cout << "Moto vendute: " << endl;
+   cout << "1. " << moto1.produttore << " " << moto1.modello  << " consumo:" << moto1.kmPerLitro << "km con 1 litro" << endl;
+   cout << "2. " << moto2.produttore << " " << moto2.modello  << " consumo:" << moto2.kmPerLitro << "km con 1 litro" << endl;
+   cout << "3. " << moto3.produttore << " " << moto3.modello  << " consumo:" << moto3.kmPerLitro << "km con 1 litro" << endl;
+
+   return 0;
+}
+
+Output:
+Moto vendute: 
+1. Kawasubi XT900 consumo:15.4km con 1 litro
+2. Hondin CGL3P consumo:16km con 1 litro
+3. Yammusi SuperYT consumo:12.5km con 1 litro
+```
 
 
 
