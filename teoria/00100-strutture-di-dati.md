@@ -163,7 +163,7 @@ Inoltre alle variabili di tipo string si possono applicare molte funzioni ed alt
   * o semplicemente `s1.find(s2)` per cercare dall'inizio.
 
 ## Definizione di _Record_ e _Struttura_ (struct)
-Un **record** è una **struttura di dati statica** composta da **elementi eterogenei** (che possono quindi essere di tipo diverso tra loro) detti **campi** o **attributi**, ciascuno identificato da un **nome**.
+Un **record** è una **struttura di dati statica** composta da **elementi eterogenei** (che possono quindi essere di tipo diverso tra loro) detti **campi** o **attributi**, ciascuno identificato da un **nome** ed un **tipo**.
 
 La **struttura di un record** definisce i campi che lo compongono.
 
