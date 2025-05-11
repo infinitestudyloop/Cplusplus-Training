@@ -26,8 +26,7 @@ Nota: le strutture di dati possono inoltre distinguersi in:
 * e **dinamiche**
 
 ## Definizione di _Vettore_ o _Array monodimensionale_
-Un **vettore** è una **struttura di dati (statica)** che contiene una **sequenza di elementi dello stesso tipo**
-che si possono accedere tramite un **indice**.
+Un **vettore** è una **struttura di dati (statica)** che contiene una **sequenza di elementi dello stesso tipo** identificati da uno **stesso nome** e che si possono accedere tramite un **indice**.
 
 * il **tipo degli elementi** (o **celle**) si chiama **tipo base** 
   * le celle sono variabili tutte dello stesso tipo base
@@ -40,6 +39,8 @@ che si possono accedere tramite un **indice**.
   * il primo elemento alla posizione con indice 0
   * il secondo elemento alla posizione con indice 1
   * ...
-  * l'ultimo elemento alla posizione N-1
+  * l'ultimo elemento alla posizione con indice N-1
+
+
 
 
