@@ -93,7 +93,7 @@ L'utilizzo di string è molto intuitivo perchè si possono applicare ad esso gli
 * operatori di confronto `==`, `!=`, `<`, `>`, `<=`, `>=`
 
 Esempio dell'uso di **operatore di assegnazione `=`**, di **concatenazione `+`** e degli **operatori di confronto**:
-```
+```c++
 #include <iostream>
 #include <string>
 using namespace std;
