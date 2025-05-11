@@ -180,9 +180,36 @@ esempio con inizializzazione:
 ```
 int temperature[3][4] = { { 25, 33, 12, -3 },
                           { 26, 29, 12,  0 },
-                          { 22, 30, 11, -3 } } 
+                          { 22, 30, 11, -3 } };
 ```
-visualizziamo la matrice con due iterazione `for` annidate:
+
+### Accesso ad un elemento di una matrice in C++
+```
+nome_matrice [riga][colonna]
+```
+esempio:
+```
+int temperature[3][4] = { { 25, 33, 12, -3 },
+                          { 26, 29, 12,  0 },
+                          { 22, 30, 11, -3 } };
+
+cout << temperature[0][0] << endl;   // stampa il valore 25, primo elemento della prima riga
+cout << temperature[0][1] << endl;   // stampa il valore 33, secondo elemento della prima riga
+cout << temperature[0][2] << endl;   // stampa il valore 12, terzo elemento della prima riga
+cout << temperature[0][3] << endl;   // stampa il valore -3, ultimo elemento della prima riga
+
+cout << temperature[1][0] << endl;   // stampa il valore 26, primo elemento della seconda riga
+cout << temperature[1][1] << endl;   // stampa il valore 29, secondo elemento della seconda riga
+cout << temperature[1][2] << endl;   // stampa il valore 12, terzo elemento della seconda riga
+cout << temperature[1][3] << endl;   // stampa il valore 0, ultimo elemento della seconda riga
+
+cout << temperature[2][0] << endl;   // stampa il valore 22, primo elemento dell'ultima riga
+cout << temperature[2][1] << endl;   // stampa il valore 30, secondo elemento dell'ultima riga
+cout << temperature[2][2] << endl;   // stampa il valore 11, terzo elemento dell'ultima riga
+cout << temperature[2][3] << endl;   // stampa il valore -3, ultimo elemento dell'ultima riga
+```
+
+Visualizziamo la matrice con due iterazione `for` annidate:
 ```
 #include <iostream>
 using namespace std;
