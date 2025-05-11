@@ -149,6 +149,15 @@ Gli insegnanti di informatica  e filosofia hanno lo stesso nome.
 I nomi in ordine alfabetico sono: Isabella , Rodolfo
 ```
 
+Inoltre alle variabili di tipo string si possono applicare molte funzioni ed altri operatori.
+* Esempio:
+* date le variabili stringa di nome `s1` ed `s2` ed gli interi `i` ed `n`:
+  * `s1.at(i)` ritorna il carattere (tipo `char`) alla posizione `i` della stringa
+  * `s1[i]` anche ritorna il carattere (tipo `char`) alla posizione `i` della stringa
+  * `s1.substr(i, n)` ritorna la sottostringa di `s1` a partire dal carattere in posizione `i` e di lunghezza `n` caratteri
+  * `s1.insert(i, s2)` modifica la stringa `s1` inserendo in essa la stringa `s2` in posizione `i`
+  * `s1.find(s2, i)` a partire dalla posizione `i` di `s1` cerca la sottostringa s2 e ritorna la posizione in cui la trova, altrimenti `string::npos`.
+  * o semplicemente `s1.find(s2)` per cercare dall'inizio.
 
 
 
