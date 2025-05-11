@@ -41,7 +41,7 @@ Un **vettore** è una **struttura di dati (statica)** che contiene una **sequenz
 
 ## Definizione di _Matrice_ o _Array bi-dimensionale_
 
-Una **matrice NxM**, è una **tabella** (bi-dimensionale) di **N righe** ed **M colonne**, contenente **elementi omogenei** (tutti dello stesso tipo) che si possono accedere tramite *due indici**, uno che indica **la riga** e l'altro **la colonna** dove sono collocati.   
+Una **matrice NxM**, è una **tabella** (bi-dimensionale) di **N righe** ed **M colonne**, contenente **elementi omogenei** (tutti dello stesso tipo) che si possono accedere tramite **due indici**, uno che indica **la riga** e l'altro **la colonna** dove sono collocati.   
 
 Una **matrice** è simile ad un vettore, quindi è una **struttura di dati (statica)** che contiene una sequenza di elementi dello stesso tipo, 
 * ma mentre il vettore ha 1 sola dimensione e possiamo immaginarlo come una seguenza composta da 1 singola riga
