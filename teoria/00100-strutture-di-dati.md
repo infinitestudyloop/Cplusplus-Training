@@ -8,7 +8,7 @@ per **aggregare dati di tipo**:
 
 I linguaggi di programmazione offrono:
 * un insieme di **tipi di dati elementari**, esempio: `int`, `double`, `char`, `bool` 
-* e **le strutture dati** che sono *strumenti per costruire tipi di **dati aggregrati più complessi***. 
+* e un insieme di **strutture di dati** che sono *strumenti per costruire tipi di **dati aggregrati più complessi***. 
 
 Esempi di strutture di dati: 
 * **array**:
