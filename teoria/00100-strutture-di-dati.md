@@ -7,7 +7,7 @@
 Le **strutture di dati** sono **strumenti per l'organizzazione dei dati**, per **aggregare dati di tipo omogeneo** (stesso tipo) o **eterogeneo** (di diverso tipo). 
 
 I linguaggi di programmazione offrono:
-* un insieme di **tipi di dati elementari**, esempio: `int`, `double`, `char`, `bool` 
+* un insieme di **tipi di dati elementari**, esempio: `int`, `double`, `char`, `bool`  
 * e un insieme di **strutture di dati** che sono *strumenti per costruire tipi di **dati aggregrati più complessi***. 
 
 Esempi di strutture di dati: 
