@@ -31,7 +31,7 @@ Un **vettore** è una **struttura di dati (statica)** che contiene una **sequenz
 * il numero di elementi, **dimensione** del vettore, deve essere dichiarato al momento della sua creazione
   * la sua dimensione resta fissa e non puo' essere variata dopo la creazione 
 * gli elementi sono memorizzati in maniera contigua in memoria, uno si seguito all'altro
-* ogni elemento (o cella) può essere acceduto direttamente tramite la sua **posizione** o **indice**,
+* **ogni elemento (o cella) può essere acceduto direttamente** tramite il **nome del vettore** e la sua **posizione** o **indice**,
   * un numero **intero tra `0` ed `N-1`**, con **`N`** uguale alla **dimensione del vettore**
   * il primo elemento alla posizione con indice 0
   * il secondo elemento alla posizione con indice 1
@@ -43,12 +43,35 @@ Un **vettore** è una **struttura di dati (statica)** che contiene una **sequenz
 
 Una **matrice NxM**, è una **tabella** (bi-dimensionale) di **N righe** ed **M colonne**, contenente **elementi omogenei** (tutti dello stesso tipo) che si possono accedere tramite **due indici**, uno che indica **la riga** e l'altro **la colonna** dove sono collocati.   
 
-Una **matrice** è simile ad un vettore, quindi è una **struttura di dati (statica)** che contiene una sequenza di elementi dello stesso tipo, 
+Una **matrice** è `simile ad un vettore`, quindi è una **struttura di dati (statica)** che contiene una sequenza di elementi dello stesso tipo, 
 * ma mentre il vettore ha 1 sola dimensione e possiamo immaginarlo come una seguenza composta da 1 singola riga
 * la matrice invece ha 2 dimensioni e si può immaginare composta da piu sequenze di elementi cioè da più righe.
 * è comodo immaginare le righe in orizzontale e le colonne in verticale
 * cosi un elemento della matrice si può identificare con la coppia (riga, colonna) come nel gioco della battaglia navale.
  
+* anche per la matrice, il **tipo degli elementi** si chiama **tipo base** 
+  * le celle nella tabella sono variabili tutte dello stesso tipo base
+  * esempio: se il tipo base e' int, abbiamo una matrice di interi
+* anche per la matrice, il numero di elementi, **dimensione** della matrice, deve essere dichiarato al momento della sua creazione
+  * la sua dimensione resta fissa e non puo' essere variata dopo la creazione
+  * e la dimensione è al prodotto **NxM**, **numero di righe x numero di colonne** 
+* gli elementi sono memorizzati in maniera contigua in memoria, uno si seguito all'altro
+* anche per la matrice, **ogni elemento (o cella) può essere acceduto direttamente** tramite il **nome della matrice** e la sua **posizione** che questa volta si specifica con **due indici**, il **numero di riga** ed il **numero di colonna**, dove:
+  * il numero di riga è un **intero tra `0` ed `N-1`**, con **`N`** uguale al **numero totale di righe**
+  * il numero di colonna è un **intero tra `0` ed `M-1`**, con **`M`** uguale al **numero totale di colonne**
+  * il primo elemento si trova alla posizione con indici (0,0), riga 0 e colonna 0
+  * il secondo elemento si trova alla posizione con indici (0,1), riga 0 e colonna 1 
+  * ...
+  * l'ultimo elemento della prima riga si trova alla posizione (0,M-1), riga 0 e colonna M-1
+  * il primo elemento della seconda riga si trova alla posizione con indici (1,0), riga 1 e colonna 0
+  * il secondo elemento della seconda riga si trova alla posizione con indici (1,1), riga 1 e colonna 1
+  * ...
+  * l'ultimo elemento della seconda riga si trova alla posizione (1,M-1), riga 1 e colonna M-1
+  * ...
+  * il primo elemento della ultima riga si trova alla posizione con indici (N-1,0), riga N-1 e colonna 0
+  * il secondo elemento della seconda riga si trova alla posizione con indici (N-1,1), riga N-1 e colonna 1
+  * ...
+  * l'ultimo elemento della ultima riga si trova alla posizione (N-1,M-1), riga N-1 e colonna M-1
 
 
 
