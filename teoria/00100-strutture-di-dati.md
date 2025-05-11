@@ -22,7 +22,7 @@ Nota: le strutture di dati possono inoltre distinguersi in:
 ## Definizione di _Vettore_ o _Array mono-dimensionale_
 Un **vettore** è una **struttura di dati (statica)** che contiene una **sequenza di elementi dello stesso tipo** identificati da uno **stesso nome** e che si possono accedere tramite un **indice**.
 
-* il **tipo degli elementi** (o **celle**) si chiama **tipo base** 
+* il **tipo degli elementi** si chiama **tipo base** 
   * le celle sono variabili tutte dello stesso tipo base
   * esempio: se il tipo base e' int, abbiamo un vettore di interi
 * il numero di elementi, **dimensione** del vettore, deve essere dichiarato al momento della sua creazione
