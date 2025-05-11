@@ -35,7 +35,7 @@ Un **vettore** è una **struttura di dati (statica)** che contiene una **sequenz
   * la sua dimensione resta fissa e non puo' essere variata dopo la creazione 
 * gli elementi sono memorizzati in maniera contigua in memoria, uno si seguito all'altro
 * ogni elemento (o cella) può essere acceduto direttamente tramite la sua **posizione** o **indice**,
-  * un numero **intero tra `0` a `N-1`**, se **`N` è la dimensione del vettore**
+  * un numero **intero tra `0` ed `N-1`**, se **`N` è la dimensione del vettore**
   * il primo elemento alla posizione con indice 0
   * il secondo elemento alla posizione con indice 1
   * ...
