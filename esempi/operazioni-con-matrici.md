@@ -1,6 +1,6 @@
 # OPERAZIONI CON MATRICI
 
-## `VISUALIZIONE` DI UNA MATRICE
+## `VISUALIZZAZIONE` DI UNA MATRICE
 
 Visualizziamo una matrice con 2 iterazioni `for` annidate:
 ```cpp
