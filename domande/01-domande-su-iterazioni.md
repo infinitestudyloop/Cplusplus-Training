@@ -1,7 +1,7 @@
 # Domande su iterazioni
 
 1. qual'è il risultato del codice seguente?
-```
+```cpp
 int i=0;
 
 for (i=0 ; i < 5 ; ++i) {
@@ -10,7 +10,7 @@ for (i=0 ; i < 5 ; ++i) {
 ```
 
 2. qual'è il risultato del codice seguente?
-```
+```c++
 int i=0;
 
 for (i=0 ; i <= 5 ; ++i) {
@@ -19,7 +19,7 @@ for (i=0 ; i <= 5 ; ++i) {
 ```
 
 3. qual'è il risultato del codice seguente?
-```
+```c++
 int i=0;
 
 for (i=5 ; i >= 0  ; --i) {
@@ -28,7 +28,7 @@ for (i=5 ; i >= 0  ; --i) {
 ```
 
 4. qual'è il risultato del codice seguente?
-```
+```c++
 int i=0;
 
 for (i=5 ; i > 2  ; --i) {
@@ -37,7 +37,7 @@ for (i=5 ; i > 2  ; --i) {
 ```
 
 5. qual'è il risultato del codice seguente?
-```
+```c++
 int i=0;
 
 for (i=1 ; i < 10  ; ++i) {
@@ -46,7 +46,7 @@ for (i=1 ; i < 10  ; ++i) {
 ```
 
 6. qual'è il risultato del codice seguente?
-```
+```c++
 int max = 10;
 int k = 2;
 
@@ -58,7 +58,7 @@ cout << endl;
 ```
 
 7. qual'è il risultato del codice seguente?
-```
+```c++
 int max = 10;
 int k = 1;
 somma = 0;
@@ -71,7 +71,7 @@ cout << "somma: " << somma << endl;
 ```
 
 8. qual'è il risultato del codice seguente?
-```
+```c++
 int max = 10;
 int k = 1;
 somma = 0;
@@ -84,7 +84,7 @@ cout << "somma: " << somma << endl;
 ```
 
 9. qual'è il risultato del codice seguente?
-```
+```c++
 int numero;
 
 do {
@@ -94,7 +94,7 @@ do {
 ```
 
 10. qual'è il risultato del codice seguente?
-```
+```c++
 int numero_da_indovinare = 5;
 int n;
 
@@ -107,7 +107,7 @@ cout << "Bravo, hai indovinato! Il numero da indovinare era: " << numero_da_indo
 ```
 
 11. qual'è il risultato del codice seguente?
-```
+```c++
 int i=0;
 
 while (i <= 10) {
@@ -121,7 +121,7 @@ while (i <= 10) {
 
 
 12. qual'è il risultato del codice seguente?
-```
+```c++
 double voti [5] = {6.0, 9.0, 5.5, 7.2, 6.5};
 int i=0;
 
@@ -131,7 +131,7 @@ for (i=0 ; i < 5 ; ++i) {
 ```
 
 13. completa il sequente codice per stampare la somma dei voti
-```
+```c++
 double voti [5] = {6.0, 9.0, 5.5, 7.2, 6.5};
 int i=0;
 int somma=0;
@@ -142,7 +142,7 @@ for (i=0 ; i < 5 ; ++i) {
 ```
 
 14. completa il sequente codice per calcolare la media dei voti
-```
+```c++
 double voti [5] = {6.0, 9.0, 5.5, 7.2, 6.5};
 int i=0;
 int somma=0;
@@ -153,7 +153,7 @@ for (i=0 ; i < 5 ; ++i) {
 ```
 
 15. qual'è il risultato del codice seguente?
-```
+```c++
 double voti [5] = {6.0, 9.0, 5.5, 7.2, 3.5};
 int i=0;
 
