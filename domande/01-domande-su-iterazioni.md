@@ -1,6 +1,4 @@
-# Domande
-
-## iterazioni
+# Domande su iterazioni
 
 1. qual'è il risultato del codice seguente?
 ```
